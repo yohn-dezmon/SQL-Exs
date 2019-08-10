@@ -1,5 +1,5 @@
 -- Here I was selecting the most recent changes to a given active program
-
+-- The cross join in the subquery was necessary to obtain/join data from two separate schemas 
 SELECT max(CHG_TMSTMP),
        ACTION_TXT,
        FIELD_NAME_TXT,
