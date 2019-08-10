@@ -1,0 +1,6 @@
+-- selecting all active roles 
+
+SELECT DISTINCT ROLE_CD, END_DT, INACT_IND
+FROM AC_DAY_ACTV_CONT
+WHERE to_number(to_char(END_DT, 'MMDDYYYY')) = 12313000
+AND INACT_IND = 'NO';
